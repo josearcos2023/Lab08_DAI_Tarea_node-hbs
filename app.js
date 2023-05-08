@@ -8,6 +8,8 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var empleadosRouter = require('./routes/empleados');
 var productosRouter = require('./routes/productos');
+var usuariosRouter = require('./routes/usuarios');
+
 
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
@@ -37,6 +39,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/empleados', empleadosRouter);
 app.use('/productos', productosRouter);
+app.use('/usuarios', usuariosRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
