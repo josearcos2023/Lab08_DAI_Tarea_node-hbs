@@ -56,6 +56,9 @@ empleadoController.update = function(req, res){
         codigo: req.body.codigo,
         nombre: req.body.nombre,
         apellido: req.body.apellido,
+        correo: req.body.correo,
+        celular: req.body.celular,
+        estado: req.body.estado
     }}, { new: true },
     function( err, empleado){
         if( err ){ 

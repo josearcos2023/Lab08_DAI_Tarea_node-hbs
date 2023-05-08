@@ -55,6 +55,7 @@ productoController.update = function(req, res){
     Producto.findByIdAndUpdate( req.params.id, {$set: {
         codigo: req.body.codigo,
         nombre: req.body.nombre,
+        tipo: req.body.tipo,
         precio: req.body.precio,
     }}, { new: true },
     function( err, producto){

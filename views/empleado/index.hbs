@@ -12,6 +12,9 @@
                             <th>Código</th>
                             <th>Nombre</th>
                             <th>Apellido</th>
+                            <th>Correo</th>
+                            <th>Celular</th>
+                            <th>Estado</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -20,6 +23,9 @@
                             <td><a href="/empleados/show/{{ _id }}">{{ codigo }}</a></td>
                             <td>{{ nombre }}</td>
                             <td>{{ apellido }}</td>
+                            <td>{{ correo }}</td>
+                            <td>{{ celular }}</td>
+                            <td>{{ estado }}</td>
                         </tr>
                         {{/each}}
                     </tbody>
